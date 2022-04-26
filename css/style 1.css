@@ -32193,9 +32193,58 @@ body.menu-open .series-menu {
     color: var(--neutro-20);
 }
 
+.login-saldacao {
+    font-family: var(--quicksand);
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--neutro-20);
+}
+
 .login-email {
     font-family: var(--quicksand);
     font-weight: 400;
     font-size: 0.75rem;
     color: var(--neutro-20);
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+
+    margin: 0 4.5rem 0 0;
+}
+
+.botoes>div {
+    background: var(--orange);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: .4rem;
+    border: 1px;
+
+    color: var(--white);
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.875rem;
+
+    width: 4.3rem;
+    height: 3.1rem;
+}
+
+.titulo-header {
+    font-family: var(--roboto);
+    font-weight: 400;
+    font-size: 1.375rem;
+    color: var(--marrom-escuro);
+}
+
+.botoes>div:nth-child(1) {
+    gap: .5rem;
+
+    width: 12rem;
 }

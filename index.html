@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<!--head DOM-->
+
 <head>
     <title>Projeto Chuva - Gustavo</title>
     <meta charset="utf-8">
@@ -9,8 +11,6 @@
     <meta name="keywords" content="Front End, Gustavo F, Web Design, Software Engineer">
     <meta name="author" content="Gustavo Ferreira">
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style 1.css">
     <link rel="stylesheet" type="text/css" href="css/style 2.css">
     <link rel="stylesheet" type="text/css" href="css/style 3.css">
@@ -19,6 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="js/index.js"></script>
     <script src="js/latest.js"></script>
@@ -27,7 +28,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
+<!--body DOM-->
+
 <body class="palette-tropical-flavours path-proceedings has-glyphicons">
+    <!--Aplicações HTML-->
     <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
         <div class="notifications-wrapper">
             <courier-toast></courier-toast>
@@ -65,8 +69,8 @@
                 </span>
             </div>
 
-            <!--Imagem logo 13 scala-->
             <div class="sidebar-body" id="main-menu">
+                <!--Imagem logo 13 scala-->
                 <div class="series-logo bg-lighten my-md">
                     <div class="field field--name-teaser-logo field--type-image field--label-hidden field--item">
                         <img src="img/Logo 400x400_0.png" width="400" height="400" alt="" class="img-responsive">
@@ -151,27 +155,23 @@
                 </div>
                 <div class="dropdown button">
                     <button class="dropdown-toggle" data-toggle="dropdown" type="button">
-                        <img src="img/linguagem-imagem.svg" alt="Language">
-                        PT, BR
+                        <i></i>
                     </button>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">EN</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">ES</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">FR</a>
-                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">ENG</a>
                     </div>
                 </div>
-
                 <div id="perfil-usuario" class="text-quicksand-normal">
                     <div>
-                        <p>Bem vindo!</p>
-                        <p>alguem@galoascience.com</p>
+                        <p>Bem Vindo!</p>
+                        <p>alguem12@galoascinece.com</p>
                     </div>
-                    <div>
-                        <img src="img/Bentinho.png" alt="Foto de perfil do usuario">
-                        <img src="img/notificacao.svg" alt="Notificações">
+                    <div class="d-flex position-relative">
+                        <span class="position-absolute top-0 start-100 trsnlate-middle bandge rounded-pill bg-danger">
+                            2
+                            <span class="visually-hidden">mensagens não lidas</span>
+                            <img src="img/Bentinho.png" alt="Usuario" style="height: 1,875rem; width: 1.875rem;">
+                        </span>
                     </div>
                 </div>
             </header>
@@ -192,187 +192,20 @@
                     <div class="col-sm-12 col-md-4 col-lg-4 actions-wrapper">
                         <div class="actions-button">
                             <div class="region region-paper-actions-major">
-                                <section id="block-buttondownloadblock-dewey"
-                                    class="block block-proceedings-callforpapers-download block-button-download-block clearfix">
-                                    <a href="/proceedings/100121/_papers/113386/download/abstract_file1"
-                                        class="btn btn-lg btn-primary btn-block download-button"><i
-                                            class="fa fa-download"></i>
-                                        Download</a>
-                                </section>
-                            </div>
-                            <div class="region region-paper-actions-minor">
-                                <section id="block-citationbuttonmodalblock-dewey"
-                                    class="block block-proceedings-citation block-citation-button-modal clearfix">
-                                    <div class="modal fade" id="citations" aria-labelledby="citations--title"
-                                        tabindex="-1" role="dialog">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Fechar"><span aria-hidden="true">×</span></button>
-                                                    <h4 id="citations--title" class="modal-title">Como citar esse
-                                                        trabalho?</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Para citar este trabalho <strong>use</strong> um dos padrões
-                                                        abaixo: </p>
-                                                    <div id="citation">
-                                                        <ul class="nav nav-tabs">
-                                                            <li class="active"><a href="#abnt"
-                                                                    data-toggle="tab">ABNT</a></li>
-                                                            <li><a href="#iso" data-toggle="tab">ISO</a></li>
-                                                            <li><a href="#apa" data-toggle="tab">APA</a></li>
-                                                            <li><a href="#vancouver" data-toggle="tab">Vancouver</a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="tab-content">
-                                                            <div class="tab-pane active" id="abnt">
-                                                                <div class="citation-text panel panel-default"
-                                                                    i="citation-citation-abnt">
-                                                                    <div class="panel-body">
-                                                                        <div id="citation-paper-113386"
-                                                                            class="citation citation-abnt"><span
-                                                                                class="citation-authors">Rosana
-                                                                                Bueno et al.</span>
-                                                                            <span class="citation-paper-title">
-                                                                                Análise sensorial de preparações
-                                                                                funcionais desenvolvidas para
-                                                                                escolares entre 09 e 15 anos, do
-                                                                                município de Campinas/SP.</span>
-                                                                            <span class="citation-proceedings">In:
-                                                                                ANAIS DO 13º SIMPóSIO LATINO
-                                                                                AMERICANO DE CIêNCIA DE ALIMENTOS,
-                                                                                2019, Campinas.</span>
-                                                                            <span
-                                                                                class="citation-digital-proceedings"><strong>Anais
-                                                                                    eletrônicos...</strong>
-                                                                                Campinas, Galoá, 2019.</span>
-                                                                            <span class="citation-paper-link">Disponível
-                                                                                em: &lt;<a
-                                                                                    href="https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s"
-                                                                                    hreflang="pt-br">https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s</a>&gt;.
-                                                                                Acesso em: 21 abr. 2022.</span>
-                                                                            <a class="copy-citation clip"
-                                                                                data-original-title="Clique para copiar"
-                                                                                data-toggle="tooltip"
-                                                                                data-placement="top"
-                                                                                data-clipboard-text="Rosana Bueno et al.  Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP. In: ANAIS DO 13º SIMPóSIO LATINO AMERICANO DE CIêNCIA DE ALIMENTOS, 2019, Campinas. Anais eletrônicos... Campinas, Galoá, 2019. Disponível em: <https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s> Acesso em: 21 abr. 2022.">Copiar
-                                                                                citação</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="tab-pane" id="iso">
-                                                                <div class="citation-text panel panel-default"
-                                                                    id="citation-citation-iso">
-                                                                    <div class="panel-body">
-                                                                        <div id="citation-paper-113386"
-                                                                            class="citation citation-iso"><span
-                                                                                class="citation-authors">Rosana
-                                                                                Bueno,</span>
-                                                                            <span class="citation-paper-title">2019,
-                                                                                Análise sensorial de preparações
-                                                                                funcionais desenvolvidas para
-                                                                                escolares entre 09 e 15 anos, do
-                                                                                município de Campinas/SP.</span>
-                                                                            <span class="citation-proceedings">Em:
-                                                                                Anais do 13º Simpósio Latino
-                                                                                Americano de Ciência de Alimentos.
-                                                                            </span>
-                                                                            <span
-                                                                                class="citation-digital-proceedings">Campinas
-                                                                                : Galoá. 2019.</span>
-                                                                            <span class="citation-paper-link">Disponível
-                                                                                em: &lt;<a
-                                                                                    href="https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s"
-                                                                                    hreflang="pt-br">https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s</a>&gt;.</span>
-                                                                            <a class="copy-citation clip"
-                                                                                data-original-title="Clique para copiar"
-                                                                                data-toggle="tooltip"
-                                                                                data-placement="top"
-                                                                                data-clipboard-text="Rosana Bueno, 2019,  Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP. Em: Anais do 13º Simpósio Latino Americano de Ciência de Alimentos.  Campinas : Galoá. 2019. Disponível em: . Acessado: 21 abr. 2022.">Copiar
-                                                                                citação</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="tab-pane" id="apa">
-                                                                <div class="citation-text panel panel-default"
-                                                                    id="citation-citation-apa">
-                                                                    <div class="panel-body">
-                                                                        <div id="citation-paper-113386"
-                                                                            class="citation citation-apa"><span
-                                                                                class="citation-authors">Rosana
-                                                                                Bueno.</span>
-                                                                            <span class="citation-paper-title">(2019,
-                                                                                December). Análise sensorial de
-                                                                                preparações funcionais desenvolvidas
-                                                                                para escolares entre 09 e 15 anos,
-                                                                                do município de Campinas/SP.</span>
-                                                                            <span class="citation-proceedings">Trabalho
-                                                                                apresentado em Anais do 13º Simpósio
-                                                                                Latino Americano de Ciência de
-                                                                                Alimentos.</span>
-                                                                            <a class="copy-citation clip"
-                                                                                data-original-title="Clique para copiar"
-                                                                                data-toggle="tooltip"
-                                                                                data-placement="top"
-                                                                                data-clipboard-text="Rosana Bueno. (2019, December).  Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP. Trabalho apresentado em Anais do 13º Simpósio Latino Americano de Ciência de Alimentos.">Copiar
-                                                                                citação</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="tab-pane" id="vancouver">
-                                                                <div class="citation-text panel panel-default"
-                                                                    id="citation-citation-vancouver">
-                                                                    <div class="panel-body">
-                                                                        <div id="citation-paper-113386"
-                                                                            class="citation citation-vancouver">
-                                                                            <span class="citation-authors">Rosana
-                                                                                Bueno,</span>
-                                                                            <span class="citation-paper-title">
-                                                                                Análise sensorial de preparações
-                                                                                funcionais desenvolvidas para
-                                                                                escolares entre 09 e 15 anos, do
-                                                                                município de Campinas/SP.</span>
-                                                                            <span class="citation-proceedings">Em:
-                                                                                Anais do 13º Simpósio Latino
-                                                                                Americano de Ciência de Alimentos;
-                                                                                Campinas.São Paulo.Brasil.</span>
-                                                                            <span
-                                                                                class="citation-digital-proceedings">Campinas
-                                                                                : Galoá; 2019.</span>
-                                                                            <span class="citation-paper-link">Disponível
-                                                                                em: <a
-                                                                                    href="https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s"
-                                                                                    hreflang="pt-br">https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s</a></span>
-                                                                            <a class="copy-citation clip"
-                                                                                data-original-title="Clique para copiar"
-                                                                                data-toggle="tooltip"
-                                                                                data-placement="top"
-                                                                                data-clipboard-text="Rosana Bueno,  Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP. Em: Anais do 13º Simpósio Latino Americano de Ciência de Alimentos; Campinas.São Paulo.Brasil. Campinas : Galoá; 2019. Disponível em: https://proceedings.science/slaca/slaca-2019/papers/-analise-sensorial-de-preparacoes-funcionais-desenvolvidas-para-escolares-entre-09-e-15-anos--do-municipio-de-campinas-s">Copiar
-                                                                                citação</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary">
+                                        <i class="fa fa-download"></i>
+                                        Download
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        <img src="img/favoritar.svg" alt="Favoritos">
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        <img src="img/doi.svg" alt="">
+                                    </button>
+                                </div>
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section id="block-favoritebuttonblock-dewey"
-                                    class="block block-proceedings-favorite block-favorite-button clearfix">
-                                    <a class="favorite btn btn-primary" data-toggle="tooltip" data-placement="top"
-                                        href="/user/login/ashnazg?destination=/proceedings/100121/_papers/113386/favorite"
-                                        title="" data-original-title="Favoritar este trabalho"> <span
-                                            class="sr-only">Favoritar este trabalho</span> <i class="far fa-star"></i>
-                                    </a>
-                                </section>
+
                             </div>
                         </div>
                         <h5 class="title pull-right">
@@ -677,6 +510,8 @@
                 </div>
             </section>
         </div>
+
+        <!--Rodape do Projeto-->
         <div class="modal fade" id="modal-doi" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -873,24 +708,22 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        ntegrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
     </script>
-
     <script src="js/bootstrap-js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
     <script type="text/javascript">
         window.NREUM || (NREUM = {});
         NREUM.info = {
-            "beacon": "bam-cell.nr-data.net",
-            "licenseKey": "ca2f00b40c",
-            "applicationID": "109686569",
-            "transactionName": "Y1UGMkIHXEZYVxFbClofJQVED11bFnAXRxVVXDgWQglRUFxQDFwCR28UB0ADQGl6WwtGF1tcCANCOmJHVlcAVwFdXgMVYAdCUEt3ClwRRl8IClUUHwtPXQBFNVVAARRyH2FAW1kMQRZdXwovVA==",
-            "queueTime": 0,
-            "applicationTime": 691,
-            "atts": "TxIFRAodT0g=",
-            "errorBeacon": "bam-cell.nr-data.net",
-            "agent": ""
-        }
+                "beacon": "bam-cell.nr-data.net",
+                "licenseKey": "ca2f00b40c",
+                "applicationID": "109686569",
+                "transactionName": "Y1UGMkIHXEZYVxFbClofJQVED11bFnAXRxVVXDgWQglRUFxQDFwCR28UB0ADQGl6WwtGF1tcCANCOmJHVlcAVwFdXgMVYAdCUEt3ClwRRl8IClUUHwtPXQBFNVVAARRyH2FAW1kMQRZdXwovVA==",
+                "queueTime": 0,
+                "applicationTime": 691,
+                "atts": "TxIFRAodT0g=",
+                "errorBeacon": "bam-cell.nr-data.net",
+                "agent": ""
     </script>
     <iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame"
         src="https://vars.hotjar.com/box-4924254a9ce4dc9b959b6e4a9b662d60.html"
